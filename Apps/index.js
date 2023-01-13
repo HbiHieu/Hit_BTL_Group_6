@@ -1,0 +1,3 @@
+const handleOpenCart = () => {
+    alert('something') ;
+}
