@@ -2,7 +2,7 @@ export const headerString =
 `<div id="header__top">
 <div id="header__top--text">Super Value Deals - Save more with coupons</div>
 <div id="header__top--language">
-       <img src="../assets/imgs/languageHeader.svg" alt="">
+       <img src="../assets/svgs/languageHeader.svg" alt="">
       <select name="" id="">
         <option value="">English</option>
         <option value="">France</option>
@@ -11,7 +11,7 @@ export const headerString =
 </div>
 </div>
 <div id="header__content">
-<img src="../assets/imgs/freshcart-logo.svg" alt="">
+<img src="../assets/svgs/freshcart-logo.svg" alt="">
 <div id="header__content--contact">
     <div id="header__content--input">
         <input type="text" placeholder="Search for products">
@@ -31,7 +31,7 @@ export const headerString =
         <i class="fa-regular fa-user"></i>
     </div>
     <div id="header__content--cart" style="height: 18.4px;">
-        <img src="../assets/imgs/cartSvg.svg" alt="" onclick="handleOpenCart()" >
+        <img src="../assets/svgs/cartSvg.svg" alt="" onclick="handleOpenCart()" >
         <span></span>
     </div>
 </div>
