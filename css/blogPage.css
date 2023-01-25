@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Inter', sans-serif;
+
+}
+.stores{
+    margin-top: 1 rem !important;
+}
+.stores ol{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.mb-0{
+    list-style: none;
+}
+.breadcrum-item a,
+.col-md-6 .mb-3 a{
+    color: #0aad0a;
+    text-decoration: none;
+     font-size: 14px;
+}
+.breadcrum-item:hover a{
+    color: #088a08;
+    transition-duration: 0.8s;
+}
+.mt-8{
+    margin-top: 2rem !important;
+}
+.img-zoom{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.col-12{
+    padding: 0 12px;
+}
+.col-12 h1{
+    font-weight: 700;
+    color: #21313c;
+}
+.h1, .h2 ,.h3{
+    letter-spacing: -0.03rem;
+}
+.mt-6{
+    margin-top: 24px;
+    margin-bottom: 80px;
+}
+img{
+    width: 100%;
+}
+.col-12 img{
+    padding: 0 -12px;
+    width: 856px;
+    height: 410px;
+    border-radius: 16px;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.col-lg-4{
+    padding: 0 12px;
+
+}
+.mt-lg-0{
+    padding-left: 32px;
+}
+.mb-3{
+    /* margin-bottom: 12px; */
+}
+.mb-8{
+    margin-bottom: 32px;
+    padding: 0 -12px;
+}
+.mb-3 a,
+.col-md-6 {
+    color: #21313c;
+    font-size: 28px;
+}
+.mt-lg-0 p{
+    color: #5c6c75;
+    margin-bottom: 16px;
+}
+.text-muted{
+    display: flex;
+    justify-content: space-between;
+}
+.text-muted p,
+.text-muted span{
+    color: #889397;
+    font-size: 0.875rem;
+}
+.mn .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col-md-6{
+    width: 32%;
+    margin-bottom: 2rem !important;
+    padding: 0 12px;
+    margin-bottom: 32px;
+}
+.mb-4{
+    margin-bottom: 1rem;
+}
+.col-md-6 .mb-4 img{
+    width: 380px;
+    height: 199.03px;
+} 
+.row-ct a{
+    display: inline;
+    font-size: 17.5px;
+    color: #21313c;
+    letter-spacing: -0.048rem;
+}
+.row-ct p{
+    color: #5c6c75;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.row-ct span p{
+    color: 12.25px;
+}
+.row-ct span .fw-bold{
+    color: #001e2b;
+    font-size: 12.25px;
+}
+.four nav{
+    padding:  0 12px;
+}
+.four .col ul{
+    display: flex;
+}
+.four ul li{
+    border: 0.667px solid #d1d6d7;
+    padding: 10px 12px ;
+    margin: 5px;
+    border-radius: 8px;
+    list-style: none;
+}
+.four li:hover{
+    background-color: #0aad0a;
+}
+
+.col-12 .col-lg-8{
+    transition: all 0.5s ease;
+    overflow: hidden;
+
+}
+
+.col-lg-8 .img-zoom:hover img,
+.mb-4 .img-zoom:hover img{
+    transform: scale(1.1);
+    display: block;
+}
+.main{
+    width: 92%;
+    margin: 0 auto;
+}
+
