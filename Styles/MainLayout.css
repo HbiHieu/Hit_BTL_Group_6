@@ -106,9 +106,12 @@
 }
 
 .footer__container {
-    display: flex;
     width: 100%;
     margin: 0 100px;
+}
+
+.footer__link {
+    display: flex;
 }
 
 .footer__left {
@@ -149,5 +152,50 @@
 .footer__right--container {
     flex: 0 0 25%;
 }
+
+.footer__checkout {
+    width: 100%;
+    padding: 16px 0;
+    border-top: 1px solid #dfe2e1;
+    border-bottom: 1px solid #dfe2e1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.footer__checkout--card , .footer__checkout--application  {
+  display: flex;
+  align-items: center;
+}
+
+.iconCheckoutFooter {
+    margin-right: 8px;
+}
+
+.footer__contact {
+    display: flex;
+    justify-content: space-between;
+    color: #889397;
+    padding: 16px 0;
+}
+
+.footer__contact-social {
+    display: flex;
+    align-items: center;
+}
+
+.iconSocial {
+    border-radius: 8px;
+    border: 1px solid #889397;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 

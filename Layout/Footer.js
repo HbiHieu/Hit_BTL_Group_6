@@ -1,4 +1,5 @@
 export const footerString = `<div class="footer__container">
+<div class="footer__link">
     <div class="footer__left">
         <div class="footer__left--head footerTitle">Categories</div>
         <div class="footer__left--content">
@@ -68,4 +69,51 @@ export const footerString = `<div class="footer__container">
                </ul>
            </div>
        </div>
+</div>
+<div class="footer__checkout">
+    <div class="footer__checkout--card">
+        <span class="iconCheckoutFooter">Payment Partners</span>
+        <span class="iconCheckoutFooter">
+            <img src="../assets/svgs/amazonpay.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter">
+            <img src="../assets/svgs/american-express.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter">
+            <img src="../assets/svgs/mastercard.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter">
+            <img src="../assets/svgs/paypal.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter">
+            <img src="../assets/svgs/visa.svg" alt="">
+        </span>
+    </div>
+    <div class="footer__checkout--application">
+        <span class="iconCheckoutFooter">Get deliveries with FreshCart</span>
+        <span class="iconCheckoutFooter">
+            <img style="width: 140px; height: 40px;" src="../assets/svgs/appstore-btn.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter">
+            <img style="width: 140px; height: 40px;" src="../assets/svgs/googleplay-btn.svg" alt="">
+        </span>
+    </div>
+</div>
+<div class="footer__contact">
+    <p class="footer__contact-text">
+        Copyright 2023 © FreshCart eCommerce HTML Template. All rights reserved. Powered by <span style="color: #0aad0a;">Codescandy</span>
+    </p>
+    <div class="footer__contact-social">
+        <span class="iconCheckoutFooter">Follow us on</span>
+        <span class="iconCheckoutFooter iconSocial">
+         <img src="../assets/svgs/facebookIcon.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter iconSocial">
+         <img src="../assets/svgs/twitterIcon.svg" alt="">
+        </span>
+        <span class="iconCheckoutFooter iconSocial">
+         <img src="../assets/svgs/instagramIcon.svg" alt="">
+        </span>
+    </div>
+</div>
 </div>`
