@@ -5,4 +5,4 @@ const header =  document.getElementById("header") ;
 const footer = document.getElementById("footer") ;
 
 header.innerHTML = headerString ;
-footer.innerHTML = footerString ;
+//footer.innerHTML = footerString ;
