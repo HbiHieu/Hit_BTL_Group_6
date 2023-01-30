@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/index.css">
-    <link rel="stylesheet" href="../Styles/MainLayout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../Styles/HomePage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/index.css" />
+    <link rel="stylesheet" href="../Styles/MainLayout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Styles/HomePage.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Document</title>
-</head>
-<body>
-    <div id="header">
-    </div>
+  </head>
+  <body>
+    <div id="header"></div>
     <div id="content">
-      <div class="slider__wrapper">
-        <!-- <div class="slider">
-            <div class="silder__content">
-                <span class="slider__content--discount">Opening Sale DisCount 50%</span>
-                <div class="slider__content--title">SuperMarket For Fresh Grocery</div>
-                <div class="silder__content--sub">Introduced a new model for online grocery shopping and convenient home delivery</div>
-                <a class="silder__content--btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div> -->
+      <div class="slider__wrapper"></div>
+      <div class="content__category content--reuse">
+        <div class="content__category--header content--header--reuse">
+          <p class="content__category--header--text">Featured Categories</p>
+        </div>
+        <div class="content__category--productList"></div>
+      </div>
+      <div class="content__advertisement">
+      </div>
+      <div class="content--popularProducts content--reuse">
+        <div class="content--header--reuse">Popular Products</div>
+        <div class="content--popularProductsList"></div>
+      </div>
+      <div class="content__bestSells content--reuse" style="margin-top: 60px">
+        <div class="content__bestSells content--header--reuse">
+          Daily Best Sells
+        </div>
+        <div class="content__bestSells--wrapper">             
+        </div>
+      </div>
+      <div class="content__note content--reuse" style="margin-bottom: 80px;">
       </div>
     </div>
-    <div id="footer">
-    </div>
-    <script type="module" src="../Apps/HomePage.js"></script>
+    <div id="footer"></div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="../Apps/HomePage/index.js"></script>
     <script src="../Apps/index.js"></script>
-</body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider__wrapper').slick({
+          draggable : true ,
+          autoplay : true ,
+          autoplaySpeed : 2000 ,
+          dots : true ,
+        });
+        $('.content__category--productList').slick({
+          draggable : true ,
+          autoplay : true ,
+          autoplaySpeed : 2000 ,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          nextArrow : `<span class="content__category--arrow--single arrowRight"
+              ><i class="fa-solid fa-angle-right"></i
+            ></span>` ,
+            prevArrow : `<span class="content__category--arrow--single arrowLeft"
+              ><i class="fa-solid fa-angle-left"></i
+            ></span>` ,
+        });
+      });
+    </script>
+  </body>
 </html>
