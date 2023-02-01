@@ -2,12 +2,13 @@ import { headerString } from "../../Layout/Header.js";
 import { footerString } from "../../Layout/Footer.js";
 
 import {
-  contentSilder,
+  contentSlider,
   ProductCategories,
   popularProducts,
   bestSells,
   bannerDeal,
-  note
+  note,
+  productHover
 } from "./const.js";
 
 import { getStartList } from "./ultil.js";
@@ -24,7 +25,7 @@ const sliderWrapper = document.querySelector(".slider__wrapper");
 renderSlider();
 
 function renderSlider() {
-  const sliders = contentSilder
+  const sliders = contentSlider
     .map((item) => {
       return `
         <div class="slider" style="background-image: url(${item.backGroundImage})" >
@@ -81,7 +82,7 @@ function renderBannerDeal() {
     <div class="content__advertisement--discount">
       ${item.description}
     </div>
-    <a class="silder__content--btn" style="padding: 8.8px 16px"
+    <a class="slider__content--btn" style="padding: 8.8px 16px"
       >Shop now</a
     >
   </div>
@@ -97,14 +98,16 @@ const popularProductsList = document.querySelector(
   ".content--popularProductsList"
 );
 
+
 function renderPopularProducts() {
   const products = popularProducts.map((item) => {
     const startProduct = getStartList(item.rating);
     return `
         <div class="popularProduct product">
+          ${productHover}
           <div class="popularProduct__container">
-            <span style="background-color:${
-              item.status ? ( item.status.includes("%") ? "#198754" : "red" ) : 'inherit'
+          <span style="background-color:${
+            item.status ? ( item.status.includes("%") ? "#198754" : "red" ) : 'inherit'
             };" class="popularProduct--status">${item.status}</span>
             <img style="width: 212px; height: 190px;" src="${
               item.img
@@ -114,33 +117,46 @@ function renderPopularProducts() {
             <div class="popularProduct--rating">
               <span class="popularProduct--rating__start start-icon">
                 ${startProduct} 
-              </span>
+                </span>
               <span class="popularProduct--rating--number">${item.rating}&nbsp;${
-      item.totalRating
-    }</span>
-            </div>
+                item.totalRating
+              }</span>
+              </div>
             <div class="popularProduct__contact">
               <div class="popularProduct__contact--price" style="font-size: 14px; font-weight: 600;">
-                ${
-                  item.costDiscount
+              ${
+                item.costDiscount
                 }<span class="popularProduct__contact--price--discount">${
       item.cost || ""
     }</span>
-              </div>
+    </div>
               <div class="popularProduct__contact--btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
                   <line x1="12" y1="5" x2="12" y2="19"></line>
                   <line x1="5" y1="12" x2="19" y2="12"></line>
-                </svg>
-                Add</div>
-            </div>
-          </div>
-        </div>`;
-  }).join('');
-  popularProductsList.innerHTML = products;
+                  </svg>
+                  Add</div>
+                  </div>
+                  </div>
+                  </div>`;
+                }).join('');
+                popularProductsList.innerHTML = products;
+              }
+              
+renderPopularProducts();
+var addProductBtns = document.querySelectorAll(".popularProduct__contact--btn") ;
+
+const handleAddProduct = (e) => {
+  console.log(e) 
 }
 
-renderPopularProducts();
+for( let addProductBtn of addProductBtns ) {
+  addProductBtn.addEventListener("click" , (e) => {
+    handleAddProduct(e) ;
+ } )
+}
+
+
 
 //BestSells Product
 
@@ -153,6 +169,7 @@ function renderBestSells() {
   const startRating = getStartList(item.rating) ;
   return ( item.html ? item.html : `
   <div class="content__bestSells--product product">
+       ${productHover}
   <div class="content__bestSells--container">
     <div class="content__bestSells--img">
       <img
@@ -235,3 +252,25 @@ function renderNoteSection() {
   noteSection.innerHTML = noteItems ;
 }
 
+//handle slick 
+$(document).ready(function(){
+  $('.slider__wrapper').slick({
+    draggable : true ,
+    autoplay : true ,
+    autoplaySpeed : 2000 ,
+    dots : true ,
+  });
+  $('.content__category--productList').slick({
+    draggable : true ,
+    autoplay : true ,
+    autoplaySpeed : 1500 ,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    nextArrow : `<span class="content__category--arrow--single arrowRight"
+        ><i class="fa-solid fa-angle-right"></i
+      ></span>` ,
+      prevArrow : `<span class="content__category--arrow--single arrowLeft"
+        ><i class="fa-solid fa-angle-left"></i
+      ></span>` ,
+  });
+});

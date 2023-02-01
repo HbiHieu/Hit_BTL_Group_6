@@ -15,9 +15,17 @@
     />
     <link rel="stylesheet" href="../Styles/HomePage.css" />
     <!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -30,8 +38,7 @@
         </div>
         <div class="content__category--productList"></div>
       </div>
-      <div class="content__advertisement">
-      </div>
+      <div class="content__advertisement"></div>
       <div class="content--popularProducts content--reuse">
         <div class="content--header--reuse">Popular Products</div>
         <div class="content--popularProductsList"></div>
@@ -40,40 +47,27 @@
         <div class="content__bestSells content--header--reuse">
           Daily Best Sells
         </div>
-        <div class="content__bestSells--wrapper">             
-        </div>
+        <div class="content__bestSells--wrapper"></div>
       </div>
-      <div class="content__note content--reuse" style="margin-bottom: 80px;">
-      </div>
+      <div
+        class="content__note content--reuse"
+        style="margin-bottom: 80px"
+      ></div>
     </div>
     <div id="footer"></div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script type="module" src="../Apps/HomePage/index.js"></script>
     <script src="../Apps/index.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slider__wrapper').slick({
-          draggable : true ,
-          autoplay : true ,
-          autoplaySpeed : 2000 ,
-          dots : true ,
-        });
-        $('.content__category--productList').slick({
-          draggable : true ,
-          autoplay : true ,
-          autoplaySpeed : 2000 ,
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          nextArrow : `<span class="content__category--arrow--single arrowRight"
-              ><i class="fa-solid fa-angle-right"></i
-            ></span>` ,
-            prevArrow : `<span class="content__category--arrow--single arrowLeft"
-              ><i class="fa-solid fa-angle-left"></i
-            ></span>` ,
-        });
-      });
-    </script>
   </body>
 </html>
