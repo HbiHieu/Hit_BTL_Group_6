@@ -1,4 +1,4 @@
-export const contentSilder = [
+export const contentSlider = [
     {
         textDiscout : 'Opening Sale Discount 50%' ,
         textTitle : 'SuperMarket For Fresh Grocery' ,
@@ -16,7 +16,7 @@ export const contentSilder = [
 //slider
 export const ProductCategories = [
     {
-        text : 'Dairy , Bread & Eggs' ,
+        text : 'Atta, Rice & Dal' ,
         img : '../assets/imgs/category-atta-rice-dal.jpg' ,
     } ,
     {
@@ -32,36 +32,28 @@ export const ProductCategories = [
         img :'../assets/imgs/category-cleaning-essentials.jpg' ,
     } ,
     {
+        text :'Pet Care' ,
+        img : '../assets/imgs/category-pet-care.jpg'
+    } ,
+    {
         text:'Dairy, Bread & Eggs' ,
         img :'../assets/imgs/category-dairy-bread-eggs.jpg' ,
     } ,
     {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
+        text:'Snack & Munchies' ,
+        img :'../assets/imgs/category-snack-munchies.jpg' ,
+    } ,
+    {
+        text:'Bakery & Biscuits' ,
+        img :'../assets/imgs/category-bakery-biscuits.jpg' ,
     } ,
     {
         text:'Instant Food' ,
         img :'../assets/imgs/category-instant-food.jpg' ,
     } ,
     {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
-    } ,
-    {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
-    } ,
-    {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
-    } ,
-    {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
-    } ,
-    {
-        text:'Instant Food' ,
-        img :'../assets/imgs/category-instant-food.jpg' ,
+        text:'Tea, Coffee & Drinks' ,
+        img :'../assets/imgs/category-tea-coffee-drinks.jpg' ,
     } ,
 ]
 
@@ -188,7 +180,7 @@ export const bestSells = [
           <div class="content__bestSells--subTitle">
             Get the best deal before close.
           </div>
-          <a style="background-color: #0aad0a" class="silder__content--btn"
+          <a style="background-color: #0aad0a" class="slider__content--btn"
             >Shop now <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -298,3 +290,21 @@ export const note = [
         text : "Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy." ,
     } ,
 ]
+
+//product hover 
+
+export const productHover = `
+<div class="popularProduct__hover">
+<div class="popularProduct__hover--icons">
+<span class="iconContactProduct">
+<i class="fa-regular fa-eye"></i>
+</span>
+<span class="iconContactProduct">
+<i class="fa-regular fa-heart"></i>
+</span>
+<span class="iconContactProduct">
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+</span>
+</div>
+</div>
+`
