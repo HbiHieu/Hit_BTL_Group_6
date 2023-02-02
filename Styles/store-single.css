@@ -10,6 +10,7 @@ html{
 .stores{
     margin-top: 1rem !important;
 }
+
 .stores ol{
     width: 25%;
     display: flex;
@@ -42,7 +43,7 @@ html{
 }
 
 .left{
-    padding: 0 12px;
+    /* padding: 0 12px; */
     width: 29%;
 }
 .column{
@@ -119,8 +120,8 @@ li{
 .nav-item{
     text-align: left;
 }
-.nav-link .nav-item:hover .nav-link{
-    background-color: #f3f4f4;
+.nav-pills-dark .nav-item:hover .nav-link{
+    background-color: #c7cfcf;
 }
 .nav-links .nav-item .nav-link{
     padding: 4px 0;
@@ -137,6 +138,10 @@ li{
     width: 100%;
     justify-content: space-between !important;
     margin-bottom: 32px;
+}
+.nav-pill-dark ul li:hover{
+    background-color: #889397;
+    border-radius: 8px;
 }
 .one-left{
     display: flex;
@@ -231,10 +236,15 @@ li{
     color: #fff;
     font-weight: 600;
 }
-.text-center img{
+/* .text-center img{
     margin: 0 0 12px;
     width: 162px;
     height: 162px;
+} */
+.text-center img{
+    /* margin: 0 0 12px; */
+    width: 152px;
+    height: 152px;
 }
 .mb-1{
     margin-bottom: 4px;
