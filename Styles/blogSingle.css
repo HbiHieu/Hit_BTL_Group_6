@@ -1,0 +1,157 @@
+
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+.stores{
+    margin-top: 1 rem !important;
+}
+.stores ol{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.row-five{
+    list-style: none;
+}
+.breadcrum-item a,
+.row-two a,
+.left-dus a{
+    color: #0aad0a;
+    text-decoration: none;
+     font-size: 14px;
+
+}
+.breadcrum-item:hover a{
+    color: #088a08;
+    transition-duration: 0.8s;
+}
+.ct{
+
+    width: 76%;
+    margin: 0 auto;
+}
+.container{
+    margin: 0 61.667px;
+    padding: 0 12px;
+    max-width: 856px;
+}
+.ca{
+    margin: 0 -12px;
+}
+.text-center{
+    text-align: center;
+}
+.text-center a,
+.breadcrum-item a{
+    font-weight: 500;
+}
+.h1, 
+.h2, .h3{
+    letter-spacing: -0.03rem;
+}
+.text-muted span{
+    font-size: 12.25px;
+}
+.imgs img{
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+.row-content span{
+    margin-right: 0.5rem !important;
+    color: #889397;
+}
+.row-three p,
+.row-one ul li,
+.row-one ol li,
+.row-one p{
+    margin-bottom: 1rem !important;
+    text-align: start;
+    color: #5c6c75;
+    font-size: 14px;
+}
+.Fail{
+    margin-bottom: 16px;
+    text-align: center;
+}
+.Fail p{
+    padding: 0 80px ;
+    margin-bottom: 8px;
+    font-size: 35px;
+    letter-spacing: -0.48px;
+    font-style: italic;
+    color: #0aad0a;
+    font-weight: 600;
+    max-width: 860px;
+    text-align: center;
+}
+.row-three{
+    margin-bottom: 16px;
+}
+.row-one ul,
+.row-one ol {
+    padding-left: 32px;
+    margin-bottom: 20px;
+}
+.row-two{
+    margin-bottom: 12px;
+}
+.mb-2{
+    margin-bottom: 8px;
+}
+.row-one p{
+    margin-bottom: 16px;
+}
+.content-align{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.content-align img{
+    width: 150px;
+    height: 150px;
+}
+.dustin{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.dustin .left-dus{
+    display: flex;
+
+}
+.dustin .img-dustin img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+@media (max-width:740px){
+    .stores ol{
+        width: 70%!important;
+    }
+    
+    .ct{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container{
+        margin: 0 2%;
+    }
+    .Fail{
+        padding: 0 1%;
+    }
+    .Fail p{
+        padding: 0 3%;
+    }
+}
+@media (max-width:1024px) and (min-widtg:741px){
+    .Fail p{
+        padding:0px 0px;
+    }
+    .Fail{
+        margin: 0;
+        
+        
+        margin: 0 auto;
+    }
+}
