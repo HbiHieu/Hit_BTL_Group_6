@@ -296,7 +296,7 @@ export const note = [
 export const productHover = `
 <div class="popularProduct__hover">
 <div class="popularProduct__hover--icons">
-<span class="iconContactProduct">
+<span class="iconContactProduct viewModal">
 <i class="fa-regular fa-eye"></i>
 </span>
 <span class="iconContactProduct">
