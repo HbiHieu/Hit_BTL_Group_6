@@ -92,6 +92,63 @@
     margin: 0 10px;
 }
 
+#header__nav--items a:hover {
+    color: #0aad0a;
+}
+
+.navPages , .navAccount {
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navPages:hover , .navAccount:hover {
+    color: #0aad0a;
+}
+
+.header__nav--item--subNavPage , .header__nav--item--subNavAccount {
+    position: absolute;
+    left: 3px;
+    top: 35px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 12rem;
+    display: none;
+    box-shadow: 0 0 2px rgb(145 158 171 / 20%), 0 12px 24px -4px rgb(145 158 171 / 12%);
+}
+
+.navPages:hover .header__nav--item--subNavPage {
+    display: block;
+}
+
+.navAccount:hover .header__nav--item--subNavAccount {
+    display: block;
+}
+
+.header__nav--item--subNavPage li , .header__nav--item--subNavAccount li {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.header__nav--item--subNavPage li:hover , .header__nav--item--subNavAccount li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.header__nav--item--subNavPage a , .header__nav--item--subNavAccount a {
+    padding: 8px 12px;
+    display: inline-block;
+    margin: 0;
+    color: #889397;
+}
+
+.header__nav--item--subNavPage a:hover , .header__nav--item--subNavAccount a:hover {
+    color: #889397 !important;
+}
+
 #header__end {
     border-bottom: 1px solid #ccc;
     margin: 0 -100px;
