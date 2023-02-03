@@ -1,4 +1,4 @@
-import { bestSells , productHover } from "./const.js";
+import { bestSells , productHover } from "../const.js";
 import { getStartList } from "./ultil.js";
 
 const bestSellsWrapper = document.querySelector(".content__bestSells--wrapper") ;

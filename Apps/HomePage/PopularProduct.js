@@ -1,4 +1,4 @@
-import { popularProducts , productHover } from "./const.js";
+import { popularProducts , productHover } from "../const.js";
 import { getStartList } from "./ultil.js";
 
 const popularProductsList = document.querySelector(

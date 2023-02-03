@@ -1,4 +1,4 @@
-import { ProductCategories } from "./const.js";
+import { ProductCategories } from "../const.js";
 
 const categoryProductList = document.querySelector(
     ".content__category--productList"

@@ -1,4 +1,4 @@
-import { contentSlider } from "./const.js";
+import { contentSlider } from "../const.js";
 
 const sliderWrapper = document.querySelector(".slider__wrapper");
 

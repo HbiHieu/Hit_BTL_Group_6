@@ -1,4 +1,4 @@
-import { note } from "./const.js";
+import { note } from "../const.js";
 
 const noteSection = document.querySelector(".content__note") ;
 

@@ -1,0 +1,125 @@
+.content__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    margin: 80px 0;
+    width: 855px;
+}
+
+.content__header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.content__subHeader {
+ font-size: 17px;
+ color: #5c6c75;
+ font-weight: bold;
+ line-height: 28px;
+ margin-bottom: 32px;
+}
+
+label {
+    color: #3d4f58;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #dfe2e1;
+    border-radius: 0.5rem;
+    color: #21313c;
+    display: block;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0.55rem 1rem;
+    width: 100%;
+}
+
+input:focus , textarea:focus {
+    background-color: #fff;
+    border-color: #85d685;
+    box-shadow: 0 0 0 0.25rem rgb(10 173 10 / 25%);
+    color: #21313c;
+    outline: 0;
+}
+
+.content__name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__name--firstName {
+   width: 50%;
+   margin-right: 12px;
+   margin-bottom: 12px;
+}
+
+.content__name--lastName {
+    width: 50%;
+    margin-left: 12px;
+   margin-bottom: 12px;
+}
+
+.content__company {
+  margin-bottom: 12px;
+}
+
+.content__title {
+  margin-bottom: 12px;
+}
+
+.content__contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__contact--email {
+    width: 50%;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.content__name--phone {
+    width: 50%;
+    margin-left: 12px;
+   margin-bottom: 12px;
+}
+
+.content__comment {
+
+}
+
+.content__comment textarea {
+    border: 1px solid #dfe2e1;
+    border-radius: 0.5rem;
+    color: #21313c;
+    display: block;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0.55rem 1rem;
+    width: 100%;
+    height: 86px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+}
+
+.content__btn {
+    background-color: #0aad0a;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 8px;
+    border: none;
+    display: inline;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
