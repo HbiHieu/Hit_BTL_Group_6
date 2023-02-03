@@ -331,6 +331,14 @@ li{
     border-radius: 4px;
     box-shadow: 0 0 2px 0;
 }
+#div1{
+    display: none;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+}
 .four .col ul{
     display: flex;
     justify-content: space-evenly;
