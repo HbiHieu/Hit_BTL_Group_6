@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - eCommerce HTML Template</title>
+    <link rel="shortcut icon" href="../assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.css"
+        integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Styles/Header.css">
+    <link rel="stylesheet" href="../Styles/Footer.css">
+    <link rel="stylesheet" href="../Styles/ShopPage.css">
+</head>
+
+<body>
+    <div id="root">
+        <header id="header"></header>
+        <main>
+            <div class="link-url">
+                <div class="link-url__container">
+                    <a href="">Home</a>
+                    &nbsp; / &nbsp;
+                    <a href="">Shop</a>
+                    &nbsp; / &nbsp;
+                    <span>Snacks & Munchies</span>
+                </div>
+            </div>
+            <div class="shop-page">
+                <div class="shop-page__container">
+                    <div class="shop-page__wrapper">
+                        <div class="shop-page__sidebar">
+                            <div class="categories">
+                                <h5>Categories</h5>
+                                <div class="categories__list">
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Dairy, Bread &amp; Eggs
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Snacks &amp; Munchies
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Fruits &amp; Vegetables
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Cold Drinks &amp; Juices
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Breakfast &amp; Instant Food
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Bakery &amp; Biscuits
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="categories__item">
+                                        <a href="#">
+                                            Chicken, Meat &amp; Fish
+                                        </a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stores">
+                                <h5>Stores</h5>
+                                <div class="stores__list">
+                                    <div class="stores__item">
+                                        <input type="text" placeholder="Search by store">
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="e-grocery">
+                                        <label for="e-grocery">E-Grocery</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="dealShare">
+                                        <label for="dealShare">DealShare</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="dmart">
+                                        <label for="dmart">DMart</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="blinkit">
+                                        <label for="blinkit">Blinkit</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="bigbasket">
+                                        <label for="bigbasket">BigBasket</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="storefront">
+                                        <label for="storefront">StoreFront</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="spencers">
+                                        <label for="spencers">Spencers</label>
+                                    </div>
+                                    <div class="stores__item">
+                                        <input type="checkbox" id="online-grocery">
+                                        <label for="online-grocery">Online Grocery</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <h5>Price</h5>
+                                <div id="price-range">
+
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <h5>Rating</h5>
+                                <div class="rating__list">
+                                    <div class="rating__item">
+                                        <input type="checkbox" id="rating-5">
+                                        <label for="rating-5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </div>
+                                    <div class="rating__item">
+                                        <input type="checkbox" id="rating-4">
+                                        <label for="rating-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </label>
+                                    </div>
+                                    <div class="rating__item">
+                                        <input type="checkbox" id="rating-3">
+                                        <label for="rating-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </label>
+                                    </div>
+                                    <div class="rating__item">
+                                        <input type="checkbox" id="rating-2">
+                                        <label for="rating-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </label>
+                                    </div>
+                                    <div class="rating__item">
+                                        <input type="checkbox" id="rating-1">
+                                        <label for="rating-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner">
+                                <div class="banner__img">
+                                    <img src="../assets/imgs/shop-page/assortment-citrus-fruits.png" alt="Banner Image">
+                                </div>
+                                <div class="banner__content">
+                                    <h1>Fresh Fruits</h1>
+                                    <p>Get Upto 25% Off</p>
+                                    <div class="btn btn--dark">
+                                        <a href="#">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-page__main">
+                            <div class="main__heading">
+                                <h1>Snacks & Munchies</h1>
+                            </div>
+                            <div class="main__list-heading">
+                                <div class="list-heading__item">
+                                    <p>
+                                        <span>24</span>
+                                        Products found
+                                    </p>
+                                </div>
+                                <div class="list-heading__item">
+                                    <div class="list-heading__icon">
+                                        <!-- No Found -->
+                                    </div>
+                                    <div class="list-heading__select">
+                                        <div class="select__item">
+                                            <select>
+                                                <option>Show: 50</option>
+                                                <option>10</option>
+                                                <option>20</option>
+                                                <option>30</option>
+                                            </select>
+                                        </div>
+                                        <div class="select__item">
+                                            <select>
+                                                <option>Sort by: Featured</option>
+                                                <option>Price: Low to High</option>
+                                                <option>Price: High to Low</option>
+                                                <option>Release Date</option>
+                                                <option>Avg. Rating</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__list-card">
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img card__img-sale card__img-sale--default">
+                                            <img src="../assets/imgs/shop-page/product-img-1.jpg" alt="Product img 1">
+                                        </div>
+                                        <p>
+                                            Snack & Munchies
+                                        </p>
+                                        <h1>
+                                            Haldiram's Sev Bhujia
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>4.5(149)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $18
+                                                <span> $24</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img card__img-sale card__img-sale--custom">
+                                            <img src="../assets/imgs/shop-page/product-img-2.jpg" alt="Product img 2">
+                                        </div>
+                                        <p>
+                                            Bakery & Biscuits
+                                        </p>
+                                        <h1>
+                                            NutriChoice Digestive
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>4.5(25)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $24
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-3.jpg" alt="Product img 3">
+                                        </div>
+                                        <p>
+                                            Bakery & Biscuits
+                                        </p>
+                                        <h1>
+                                            Cadbury 5 Star Chocolate
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>5(469)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $32
+                                                <span>35</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img card__img-sale card__img-sale--default">
+                                            <img src="../assets/imgs/shop-page/product-img-4.jpg" alt="Product img 4">
+                                        </div>
+                                        <p>
+                                            Snack & Munchies
+                                        </p>
+                                        <h1>
+                                            Onion Flavour Potato
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>3.5(456)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $3
+                                                <span> $5</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-5.jpg" alt="Product img 5">
+                                        </div>
+                                        <p>
+                                            Instant Food
+                                        </p>
+                                        <h1>
+                                            Salted Instant Popcorn
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>4.5(39)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $13
+                                                <span> $18</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img card__img-sale card__img-sale--default">
+                                            <img src="../assets/imgs/shop-page/product-img-6.jpg" alt="Product img 6">
+                                        </div>
+                                        <p>
+                                            Dairy, Bread & Eggs
+                                        </p>
+                                        <h1>
+                                            Blueberry Greek Yogurt
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>4.5(189)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $18
+                                                <span> $24</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-7.jpg" alt="Product img 7">
+                                        </div>
+                                        <p>
+                                            Dairy, Bread & Eggs
+                                        </p>
+                                        <h1>
+                                            Britannia Cheese Slices
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>5(345)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $24
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-8.jpg" alt="Product img 8">
+                                        </div>
+                                        <p>
+                                            Snack & Munchies
+                                        </p>
+                                        <h1>
+                                            Onion Flavour Potato
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>3.5(456)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $32
+                                                <span> $35</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-9.jpg" alt="Product img 9">
+                                        </div>
+                                        <p>
+                                            Snack & Munchies
+                                        </p>
+                                        <h1>
+                                            Slurrp Millet Chocolate
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>4.5(67)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $3
+                                                <span> $5</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__item">
+                                    <div class="card__container">
+                                        <div class="card__img">
+                                            <img src="../assets/imgs/shop-page/product-img-10.jpg" alt="Product img 10">
+                                        </div>
+                                        <p>
+                                            Dairy, Bread & Eggs
+                                        </p>
+                                        <h1>
+                                            Amul Butter - 500 g
+                                        </h1>
+                                        <div class="card__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>3.5(89)</span>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__price">
+                                                $13
+                                                <span> $18</span>
+                                            </p>
+                                            <div class="btn btn--small btn--primary">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    Add
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__pagination">
+                                <div class="pagination__item">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="pagination__item">
+                                    1
+                                </div>
+                                <div class="pagination__item">
+                                    2
+                                </div>
+                                <div class="pagination__item">
+                                    ...
+                                </div>
+                                <div class="pagination__item">
+                                    12
+                                </div>
+                                <div class="pagination__item">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"
+        integrity="sha512-1mDhG//LAjM3pLXCJyaA+4c+h5qmMoTc7IuJyuNNPaakrWT9rVTxICK4tIizf7YwJsXgDC2JP74PGCc7qxLAHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../Layout/Header.js"></script>
+    <script type="module" src="../Layout/Footer.js"></script>
+    <script type="module" src="../Apps/ShopPage.js"></script>
+</body>
+
+</html>
