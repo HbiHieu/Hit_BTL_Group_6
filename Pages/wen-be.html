@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Hit_BTL_Group_6/Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="heder-a">
+        <div class="main">
+            <div class="head" id="div1">
+                <a href="/Hit_BTL_Group_6/Pages/store-single.html"><i class="fa-sharp fa-solid fa-xmark" style="margin-left: 100%;font-size: 25px; margin-top: 1%;"></i></a>
+              <div class="web-be"  style="display: flex;">
+                <div class="left-a">
+                    <div class="left-1">
+                        <p>slide 1 of 4</p>
+                    </div>
+                    <div class="left-2">
+                        <div class="img-zoom">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-1.jpg" alt="">
+                        </div>
+                        <div class="img-zoom">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-2.jpg" alt="">
+                        </div>
+                        <div class="img-zoom">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-3.jpg" alt="">
+                        </div>
+                        <div class="img-zoom">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="left-3">
+                        <div class="img-pr">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-1.jpg" alt="">
+                        </div>
+                        <div class="img-pr">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-2.jpg" alt="">
+                        </div>
+                        <div class="img-pr">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-3.jpg" alt="">
+                        </div>
+                        <div class="img-pr">
+                            <img src="/Hit_BTL_Group_6/assets/img/product-single-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-b">
+                    <div class="right-1">
+                        <p>Bakery Biscuits</p>
+                    </div>
+                    <div class="right-2">
+                        <h2 style="color:rgb(33, 49, 60) ;    font-size: 2.1875rem;"> Napolitanke Ljesnjak</h2>
+                    </div>
+                    <div style="display: flex;margin-bottom: 16px;">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <div class="ctt">
+                            <span>(30 reviews)</span>
+                        </div>  
+                    </div>
+                    <div class="right-3">
+                        <span style="color: rgb(0,30,43);font-weight: 700;">$32</span>
+                        <span style="color: rgb(136,147,151);text-decoration: line-through;">$35</span>
+                        <p>26 % Off</p>
+                    </div>
+                    <hr style="opacity: 0.5;margin: 5% 0;">
+                    <div class="right-4">
+                        <button>250g</button>
+                        <button>500g</button>
+                        <button>1kg</button>
+                    </div>
+                    <div class="right-5">
+                        <div class="box" id="box" style="display: flex;">
+                            
+                            <button id="tang" onclick="tangso(1)">+</button>
+                            <button> <p  id="number">0</p></button>
+                           
+                            <button id="giam" onclick="giamso(1)">-</button>
+                           
+                          </div>
+                    </div>
+                    <div class="right-6">
+                        <button style="background-color:#0aad0a ; 
+                        border: #0aad0a solid 0.667px;color: #fff;">
+                            Add to cart
+                        </button>
+                        <div style="margin-left: 1%;" class="con">
+                            <button ><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                            <button style="padding: 8.8px 16px;"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr style="opacity: 0.5;margin: 5% 0;">
+                    <div class="right-7">
+                        <table>
+                            <tr>
+                                <td>Product Code:</td>
+                                <td>FBB00255</td>
+                            </tr>
+                            <tr>
+                                <td>Availability:</td>
+                                <td>In Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Type:</td>
+                                <td>Fruits</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping:</td>
+                                <td><span>01 day shipping. <span>( Frê pickup today)</span></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+       
+        var btntang = document.getElementById("tang");
+
+
+var btngiam = document.getElementById("giam");
+
+var number = document.getElementById("number");
+
+var countNumber = number.textContent*1;
+
+
+function tangso(count) {
+    countNumber += count;
+   
+    number.textContent = countNumber;
+}
+
+function giamso(count) {
+    if( countNumber>=1)
+    countNumber -= count;
+    
+    number.textContent = countNumber;
+}
+    </script>
+</body>
+</html>

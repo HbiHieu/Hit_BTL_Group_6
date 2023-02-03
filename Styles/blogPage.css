@@ -1,9 +1,14 @@
-
+.img-zoom{
+    width: 100%;
+    margin:5% 0;
+    overflow: hidden;
+}
 .row-five{
     list-style: none;
 }
-.content-10{
+.content-10 .img-zoom{
     width: 100%;
+
 }
 .content-10 .img-zoom img{
     width:700px;
@@ -12,17 +17,13 @@
 }
 .content-6 .row-two a{
     color: #0aad0a;
-    text-decoration: none;
      font-size: 14px;
 }
-.breadcrum-item:hover a{
+.breadcrum-item:hover a,.row-ct:hover a{
     color: #088a08;
     transition-duration: 0.8s;
 }
-.row-two:hover a{
-    color: #088a08;
-    transition-duration: 0.8s;
-}
+
 .text-3{
     margin-top: 2rem !important;
 }
@@ -49,16 +50,11 @@ img{
 }
 .content-ct img{
     padding: 0 -12px;
-    /* width: 856px;
-    height: 410px; */
     border-radius: 16px;
 }
 .row-content{
     display: flex;
     justify-content: space-between;
-}
-a{
-    text-decoration: none;
 }
 .content-4{
     padding: 0 12px;
@@ -103,10 +99,6 @@ a{
 .row-three{
     margin-bottom: 1rem;
 }
-.content-6 .row-three img{
-    /* width: 380px;
-    height: 199.03px; */
-} 
 .row-ct a{
     display: inline;
     font-size: 17.5px;
@@ -124,6 +116,7 @@ a{
 .row-ct span .fw-bold{
     color: #001e2b;
     font-size: 12.25px;
+    font-weight: 600;
 }
 
 .content-10 .img-zoom:hover img,
@@ -133,32 +126,28 @@ a{
 }
 
 
-@media (max-width:740px)
+@media (max-width:768px)
 {
     .row-content,
     .row{
         display: block;
     }
-    .content-10{
-        width: 100%;
-    }
     img,
-    .content-6{
+    .content-6,  .content-10{
         width: 100%;
     }
 }
-@media (min-width:740px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px){
     .row-content,
     .row{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: left;
     }
-    .content-10{
-        width: 100%;
-    }
-    img{
+    .content-10,img{
         width: 100%;
     }
     .content-6{
-        width: 45%;
+        width: 46%;
     }
 }

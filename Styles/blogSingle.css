@@ -125,9 +125,9 @@ img{
     height: 40px;
     border-radius: 50%;
 }
-@media (max-width:740px){
+@media (max-width:768px){
     .stores ol{
-        width: 70%!important;
+        width: 100%;
     }
     
     .ct{
@@ -144,7 +144,10 @@ img{
         padding: 0 3%;
     }
 }
-@media (max-width:1024px) and (min-widtg:741px){
+@media (max-width:1024px) and (min-widtg:769px){
+    .stores ol{
+        width: 40%;
+    }
     .Fail p{
         padding:0px 0px;
     }

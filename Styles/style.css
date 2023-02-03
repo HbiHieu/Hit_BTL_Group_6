@@ -5,31 +5,44 @@
 }
 html{
     font-family: 'Inter', sans-serif;
-
+  background-color: rgb(166, 162, 162);
 }
-/* .main{
-    width: 94%;
+.heder-a{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main{
+    width: 86%;
     margin: 0 auto;
     margin-top: 3%;
-} */
-.head{
-    display: flex;
-    background-color: rbga(0,0,0,0.5);
-    /* justify-content: space-between; */
+    border-radius: 10px;
+    background-color: #fff;
+}
+.head{ 
+    text-align: center;
+    width: 94%;
+    margin: 0 auto;
 }
 .left-a{
 width: 60%;
 }
 .left-2{
     margin:1% 0 ;
- 
+}
+.img-zoom{
+    width: 83%;
+    margin: 3% 0;
+    overflow: hidden;
 }
 .left-2 .img-zoom img{
-    width: 560px;
     height: auto;
     border-radius: 8px;
 }
-img{
+img,
+.heder-a{
     width: 100%;
 }
 .left-3,
@@ -37,18 +50,19 @@ img{
     display: flex;
 }
 .left-3 img{
-    width: 130px;
-    height: auto;
     border-radius: 8px;
 }
 .left-3 .img-pr{
     margin-right: 2%;
-  
+    width: 24%;  
 }
 .star i{
     color: #ffc107;
     font-size: 12.25px;
-
+}
+.right-b,
+.left-a{
+    text-align: left;
 }
 .right-1,
 .right-4 {
@@ -81,8 +95,7 @@ img{
     border: rgb(136,147,151) solid 0.667px;
 }
 .right-6{
-    margin-top: 12px;
-    
+    margin-top: 12px;    
 }
 .right-5 button{
     padding: 7px;
@@ -106,18 +119,35 @@ img{
     padding: 12px 24px;
     font-size: 14px;
 }
-/* .img-zoom{
+.img-zoom{
     transition: all 0.5s ease;
     overflow: hidden;
-
-} */
-/* .right-5 #tang:hover,
-.right-5 #giam:hover{
-    background-color: #9ea09e;
-    border: rgb(136,147,151) solid 0.667px;
-} */
+}
 .img-zoom:hover img
 {
-    transform: scale(1.1);
-    display: block;
+    transform: scale(1.16);
+}
+@media (max-width:1024px),
+{
+    .web-be{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left-a{
+        width: 100%;
+    }
+    .img-zoom{
+        width: 100%;
+        margin-left:2%;
+    }
+    .left-3,
+    .right-b{
+        margin-left: 3%;
+    }
+    .left-3 .img-pr{
+        margin-right: 2%;
+    }
+    .right-b .right-1{
+        margin-top: 3%;
+    }
 }

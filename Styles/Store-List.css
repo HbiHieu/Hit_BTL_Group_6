@@ -150,12 +150,15 @@ html{
 }
 
 
-@media (max-width:740px){
-    .col{
+@media (max-width:768px){
+    .col,.stores ol{
         width: 100%;
     }
 }
-@media (max-width:1024px) and (min-width:740px){
+@media (max-width:1024px) and (min-width:769px){
+    .stores ol{
+        width: 40%;
+    }
     .col{
         width: 47%;
     }
