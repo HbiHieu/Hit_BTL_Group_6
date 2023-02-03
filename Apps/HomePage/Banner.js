@@ -1,4 +1,4 @@
-import { bannerDeal } from "./const.js";
+import { bannerDeal } from "../const.js";
 
 const contentAdvertisement = document.querySelector(".content__advertisement") ;
 
