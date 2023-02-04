@@ -13,7 +13,7 @@ export const headerString =
 </div>
 </div>
 <div id="header__content">
-<img src="../assets/svgs/freshcart-logo.svg" alt="" />
+<a href="/Pages/"><img src="../assets/svgs/freshcart-logo.svg" alt="" /></a>
 <div id="header__content--contact">
   <div id="header__content--input">
     <input type="text" placeholder="Search for products" />
@@ -49,7 +49,23 @@ export const headerString =
 <div id="header__nav--items">
   <a href="/Pages/" class="header__nav--item">Home</a>
   <a href="/Pages/ShopPage.html" class="header__nav--item">Shop</a>
-  <a href="/Pages/StorePage.html" class="header__nav--item">Stores</a>
+  <span class="header__nav--item navStores">Stores
+    <span style="font-size: 12px">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+    <ul class="header__nav--item--subNavStore">
+      <li>
+        <a href="/Pages/StorePage.html">Store List</a>
+      </li>
+      <li>
+        <a href="/Pages/store-gird.html">Store Grid</a>
+      </li>
+      <li>
+        <a href="/Pages/store-single.html">Store Single</a>
+      </li>
+    </ul>
+  </span>
+  </span>
   <a href="#" class="header__nav--item">Mega menu</a>
   <span class="header__nav--item navPages"
     >Pages
@@ -58,10 +74,10 @@ export const headerString =
     </span>
     <ul class="header__nav--item--subNavPage">
       <li>
-        <a href="">Blog</a>
+        <a href="/Pages/blogPage.html">Blog</a>
       </li>
       <li>
-        <a href="">Blog Single</a>
+        <a href="/Pages/blogSingle.html">Blog Single</a>
       </li>
       <li>
         <a href="/Pages/AboutUs.html">About us</a>

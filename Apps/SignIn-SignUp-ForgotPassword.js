@@ -1,5 +1,5 @@
 import { HeaderMinString } from "../Layout/HeaderMin.js";
-import { FooterString } from "../Layout/Footer.js";
+import { footerString } from "../Layout/Footer.js";
 
 const headerMin = document.getElementById('header');
 const footer = document.getElementById('footer');
@@ -16,4 +16,4 @@ if (togglePassword) {
 }
 
 headerMin.innerHTML = HeaderMinString;
-footer.innerHTML = FooterString;
+footer.innerHTML = footerString;
