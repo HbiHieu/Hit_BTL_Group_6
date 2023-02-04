@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Inter', sans-serif;
+  background-color: rgb(166, 162, 162);
+}
+.heder-a{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main{
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.head{ 
+    text-align: center;
+    width: 94%;
+    margin: 0 auto;
+}
+.left-a{
+width: 60%;
+}
+.left-2{
+    margin:1% 0 ;
+}
+.img-zoom{
+    width: 83%;
+    margin: 3% 0;
+    overflow: hidden;
+}
+.left-2 .img-zoom img{
+    height: auto;
+    border-radius: 8px;
+}
+img,
+.heder-a{
+    width: 100%;
+}
+.left-3,
+.right-6{
+    display: flex;
+}
+.left-3 img{
+    border-radius: 8px;
+}
+.left-3 .img-pr{
+    margin-right: 2%;
+    width: 24%;  
+}
+.star i{
+    color: #ffc107;
+    font-size: 12.25px;
+}
+.right-b,
+.left-a{
+    text-align: left;
+}
+.right-1,
+.right-4 {
+    margin-bottom: 16px;
+}
+.right-1 p,
+.ctt span{
+    color:  #0aad0a;
+}
+.right-2{
+    padding-bottom: 4px;
+}
+.right-3{
+    display: flex;
+}
+.right-3 span{
+    margin-right: 2%;
+    font-size: 21px;
+    font-weight: 500;
+}
+.right-3 p{
+    color: rgb(219, 48, 48);
+    margin-left: 8px;
+    margin-top:1%;
+}
+.right-4 button{
+    padding: 8.8px;
+    color: rgb(136,147,151);
+    border-radius: 8px;
+    border: rgb(136,147,151) solid 0.667px;
+}
+.right-6{
+    margin-top: 12px;    
+}
+.right-5 button{
+    padding: 7px;
+}
+.right-6 button{
+    margin-top: 8px;
+    padding: 0 4px;
+    padding: 8.8px 16px;
+    
+    border-radius: 4px;
+}
+.right-6 .con button{
+    border: rgb(136,147,151) solid 0.667px;
+    
+}
+.left-1 p,
+.right-7 {
+    color: rgb(92,108,117);
+}
+.right-7 td{
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.img-zoom{
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.img-zoom:hover img
+{
+    transform: scale(1.16);
+}
+@media (max-width:1024px),
+{
+    .web-be{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left-a{
+        width: 100%;
+    }
+    .img-zoom{
+        width: 100%;
+        margin-left:2%;
+    }
+    .left-3,
+    .right-b{
+        margin-left: 3%;
+    }
+    .left-3 .img-pr{
+        margin-right: 2%;
+    }
+    .right-b .right-1{
+        margin-top: 3%;
+    }
+}
