@@ -144,6 +144,12 @@ const handleCloseModal = () => {
 const handleShowModal = () => {
   if ( isOpen ) {
     modalSection.classList.add("active") ;
+    $(".modal__container--sliders--imgList").slick({
+      slidesToShow : 1 ,
+      draggable : false ,
+      dots : true ,
+      dotsClass : 'modal__container--sliders--nav' ,
+})
   }
   else {
     modalSection.classList.remove("active") ;
@@ -195,10 +201,3 @@ for( let i = 0 ; i <= 3 ; i++ ) {
   })
 }
 
-$(".modal__container--sliders--imgList").slick({
-          slidesToShow : 1 ,
-          draggable : false ,
-          dots : true ,
-          dotsClass : 'modal__container--sliders--nav' ,
-          initialSlide : 0 ,
-})
