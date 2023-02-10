@@ -13,7 +13,7 @@ export const headerString =
 </div>
 </div>
 <div id="header__content">
-<a href="/Pages/"><img src="../assets/svgs/freshcart-logo.svg" alt="" /></a>
+<a href="/Hit_BTL_Group_6/Pages/"><img src="../assets/svgs/freshcart-logo.svg" alt="" /></a>
 <div id="header__content--contact">
   <div id="header__content--input">
     <input type="text" placeholder="Search for products" />
@@ -47,21 +47,21 @@ export const headerString =
   <button>All Department</button>
 </div>
 <div id="header__nav--items">
-  <a href="/Pages/" class="header__nav--item">Home</a>
-  <a href="/Pages/ShopPage.html" class="header__nav--item">Shop</a>
+  <a href="/Hit_BTL_Group_6/Pages/" class="header__nav--item">Home</a>
+  <a href="/Hit_BTL_Group_6/Pages/ShopPage.html" class="header__nav--item">Shop</a>
   <span class="header__nav--item navStores">Stores
     <span style="font-size: 12px">
       <i class="fa-solid fa-chevron-down"></i>
     </span>
     <ul class="header__nav--item--subNavStore">
       <li>
-        <a href="/Pages/StorePage.html">Store List</a>
+        <a href="/Hit_BTL_Group_6/Pages/StorePage.html">Store List</a>
       </li>
       <li>
-        <a href="/Pages/store-gird.html">Store Grid</a>
+        <a href="/Hit_BTL_Group_6/Pages/store-gird.html">Store Grid</a>
       </li>
       <li>
-        <a href="/Pages/store-single.html">Store Single</a>
+        <a href="/Hit_BTL_Group_6/Pages/store-single.html">Store Single</a>
       </li>
     </ul>
   </span>
@@ -74,19 +74,19 @@ export const headerString =
     </span>
     <ul class="header__nav--item--subNavPage">
       <li>
-        <a href="/Pages/blogPage.html">Blog</a>
+        <a href="/Hit_BTL_Group_6/Pages/blogPage.html">Blog</a>
       </li>
       <li>
-        <a href="/Pages/blogSingle.html">Blog Single</a>
+        <a href="/Hit_BTL_Group_6/Pages/blogSingle.html">Blog Single</a>
       </li>
       <li>
-        <a href="/Pages/AboutUs.html">About us</a>
+        <a href="/Hit_BTL_Group_6/Pages/AboutUs.html">About us</a>
       </li>
       <li>
-        <a href="/Pages/Error404.html">404 Error</a>
+        <a href="/Hit_BTL_Group_6/Pages/Error404.html">404 Error</a>
       </li>
       <li>
-        <a href="/Pages/Contact.html">Contact</a>
+        <a href="/Hit_BTL_Group_6/Pages/Contact.html">Contact</a>
       </li>
     </ul>
   </span>
@@ -97,16 +97,16 @@ export const headerString =
     </span>
     <ul class="header__nav--item--subNavAccount">
       <li>
-        <a href="/Pages/SignIn.html">Sign In</a>
+        <a href="/Hit_BTL_Group_6/Pages/SignIn.html">Sign In</a>
       </li>
       <li>
-        <a href="/Pages/SignUp.html">Sign Up</a>
+        <a href="/Hit_BTL_Group_6/Pages/SignUp.html">Sign Up</a>
       </li>
       <li>
-        <a href="/Pages/ForgotPassword.html">Forgot password</a>
+        <a href="/Hit_BTL_Group_6/Pages/ForgotPassword.html">Forgot password</a>
       </li>
       <li>
-        <a href="/Pages/">My Account</a>
+        <a href="/Hit_BTL_Group_6/Pages/">My Account</a>
       </li>
     </ul>
   </span>
