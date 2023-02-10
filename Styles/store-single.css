@@ -364,10 +364,10 @@ img ,
     margin-left: -5.5%;
     }
     .two{
-        margin-left: -5%;
+        margin-left: -3%;
     }
     .three{
-        margin-left: -7%;
+        margin-left: -3%;
     }
     .four{
         margin-left: 15%;
@@ -376,12 +376,25 @@ img ,
     .col{
         width: 50%;
     }
+    .content-2{
+        margin-left: -0.2%;
+    }
+    .main{
+        width: 90%;
+    }
+    body{
+        margin: 0 !important;
+    }
 }
 @media (max-width:1024px) and (min-width:769px){
+    
     .stores ol{
         width: 40%;
     }
     .col{
         width: 50%;
+    }
+    .content-2{
+        margin-left: 0.2%;
     }
 }
