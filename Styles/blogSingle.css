@@ -6,6 +6,15 @@ img{
 .stores{
     margin-top: 1 rem !important;
 }
+.row-one ul li{
+    list-style: outside;
+}
+.row-one ol li{
+    list-style: decimal;
+}
+.row-one .cha{
+    margin-left: -2%;
+}
 .stores ol{
     width: 25%;
     display: flex;
@@ -142,6 +151,15 @@ img{
     }
     .Fail p{
         padding: 0 3%;
+    }
+    .img-left,.img-right{
+        display: none;
+    }
+    .main{
+        width: 90%;
+    }
+    body{
+        margin: 0 !important;
     }
 }
 @media (max-width:1024px) and (min-widtg:769px){
